@@ -1,0 +1,12 @@
+*.o
+*.ko
+*.cmd
+*.swp
+*.mod
+modules.order
+*.mod.c
+*.symvers
+payload*
+*__pycache__
+query_app
+.venv
