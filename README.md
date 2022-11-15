@@ -112,7 +112,7 @@ is invoked.
 
 ## Hmm if only there were some sort of moving picture I would believe you
 
-[![asciicast](https://asciinema.org/a/etjtqyaj24agdp0d547i7a5on.png)](https://asciinema.org/a/etjtqyaj24agdp0d547i7a5on)
+[![asciicast](https://asciinema.org/a/537734.svg)](https://asciinema.org/a/537734)
 
 ## Running For Yourself
 
